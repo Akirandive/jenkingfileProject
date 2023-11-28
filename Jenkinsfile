@@ -11,6 +11,7 @@ pipeline{
           stage("Clone Project")
           {
             steps{
+                 sh "rm -rf * "
                  sh "git clone https://github.com/Akirandive/jenkingfileProject.git "
             }
           }
