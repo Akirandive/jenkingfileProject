@@ -11,7 +11,7 @@ pipeline{
           stage("Clone Project")
           {
             steps{
-                 sh "clone https://github.com/Akirandive/jenkingfileProject.git "
+                 sh "git clone https://github.com/Akirandive/jenkingfileProject.git "
             }
           }
           stage ("install httpd and service start")
