@@ -22,6 +22,20 @@ pipeline{
             }
           }
 
+      
+          stage ("Project Deployment")
+          {
+            steps{
+               sh "cd /var/www/html "
+               sh "rm -rf * "
+               sh "cp /mnt/jenkingfileProject/index.html  /var/www/html"
+                  
+            }
+          }
+
+
+      
+
    }
 
 }
