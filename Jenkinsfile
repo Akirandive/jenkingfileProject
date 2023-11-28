@@ -30,6 +30,7 @@ pipeline{
                sh "cd /var/www/html "
                sh "rm -rf * "
                sh "cp /mnt/jenkingfileProject/index.html  /var/www/html"
+               sh "chmod -R 777 /var/www/html "
                   
             }
           }
